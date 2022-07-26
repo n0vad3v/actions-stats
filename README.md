@@ -9,7 +9,7 @@ Wonder what repo are using your quota? This silly script can quickly give you a 
 Download and install dependencies:
 
 ```
-wget https://raw.githubusercontent.com/n0vad3v/actions-stats/master/action-stats.py
+wget https://raw.githubusercontent.com/n0vad3v/actions-stats/master/actions-stats.py
 wget https://raw.githubusercontent.com/n0vad3v/actions-stats/master/requirements.txt
 pip3 install -r requirements.txt
 ```
