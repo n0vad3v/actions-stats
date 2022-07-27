@@ -29,7 +29,11 @@ def get_workflow_runs(full_repo_name,workflow_id,gh_token,date_period):
     all_workflow_runs = []
 
     workflow_total_count = response.json()['total_count']
-    workflow_name = response.json()['workflow_runs'][0]['name']
+
+    try:
+        workflow_name = response.json()['workflow_runs'][0]['name']
+    except:
+        workflow_name = 'No workflow name(why?)'
 
     print("Getting workflow run data for workflow: {}(id:{})".format(workflow_name,workflow_id))
 
