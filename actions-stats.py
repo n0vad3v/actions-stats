@@ -41,7 +41,7 @@ def get_workflow_runs(full_repo_name,workflow_id,gh_token,date_period):
             # Check if workflow created_at has already meet the date period requirements, in this case, we could just skip
             datetime_before_today = datetime.datetime.now() - datetime.timedelta(days=int(date_period))
             if response.json()['workflow_runs'][0]['created_at'] < datetime_before_today.strftime('%Y-%m-%dT%H:%M:%SZ'):
-                continue
+                break
             all_workflow_runs.extend(response.json()['workflow_runs'])
         except:
             print('Error: {}'.format(response.json()))
