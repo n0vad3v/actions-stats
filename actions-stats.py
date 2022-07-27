@@ -31,17 +31,27 @@ def get_workflow_runs(full_repo_name,workflow_id,gh_token,date_period):
     workflow_total_count = response.json()['total_count']
     workflow_name = response.json()['workflow_runs'][0]['name']
 
+    print("Getting workflow run data for workflow: {}(id:{})".format(workflow_name,workflow_id))
+
     total_pages = int(workflow_total_count/100) + 1
     for page in range(1,total_pages+1):
         url = 'https://api.github.com/repos/{}/actions/workflows/{}/runs?per_page=100&page={}'.format(full_repo_name,workflow_id,page)
         response = requests.get(url,headers=get_header(gh_token))
-        all_workflow_runs.extend(response.json()['workflow_runs'])
+        try:
+            # Check if workflow created_at has already meet the date period requirements, in this case, we could just skip
+            datetime_before_today = datetime.datetime.now() - datetime.timedelta(days=int(date_period))
+            if response.json()['workflow_runs'][0]['created_at'] < datetime_before_today.strftime('%Y-%m-%dT%H:%M:%SZ'):
+                continue
+            all_workflow_runs.extend(response.json()['workflow_runs'])
+        except:
+            print('Error: {}'.format(response.json()))
+            break
 
     # Filter by date
     datetime_before_today = datetime.datetime.now() - datetime.timedelta(days=int(date_period))
     all_workflow_runs = [workflow_run for workflow_run in all_workflow_runs if workflow_run['created_at'] > datetime_before_today.isoformat()]
     if len(all_workflow_runs) == 0:
-        print("No workflow runs found for {} during the selected period.".format(full_repo_name))
+        print("No workflow runs found for repo: {} with workflow name: {}(id:{}) during the selected period.".format(full_repo_name, workflow_name, workflow_id))
         return 0,0,workflow_name
 
     # Calculate time taken for each workflow run
@@ -61,11 +71,13 @@ if __name__ == '__main__':
     gh_token = sys.argv[2]
     date_period = sys.argv[3]
 
+    print("Getting all repo full names for {}".format(owner))
     repo_list = get_all_repo_full_names(owner,gh_token)
 
     total_ret = {}
 
     for repo in repo_list:
+        print("Fetching workflow runs for repo: {}".format(repo))
         repo_workflow_ids = get_workflow_ids(repo,gh_token)
         repo_total_run_time = 0
         for workflow_id in repo_workflow_ids:
