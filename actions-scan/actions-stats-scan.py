@@ -1,6 +1,7 @@
 import requests
 import sys
 import datetime
+import time
 from terminaltables import AsciiTable
 
 def get_header(gh_token):
@@ -95,6 +96,9 @@ if __name__ == '__main__':
                 total_ret[repo]['per_workflow'] = {}
             total_ret[repo]['per_workflow'][workflow_name] = {'total_runtime': '{} mins'.format(round(total_workflow_run_time/60,2)),'average_runtime': '{} mins'.format(round(average_workflow_run_time/60,2))}
             repo_total_run_time += total_workflow_run_time
+
+            # Sleep for 120 seconds to avoid GitHub API rate limit
+            time.sleep(120)
         # Sum up all workflows total runtime
         try:
             total_ret[repo]['total_runtime'] = '{} mins'.format(round(repo_total_run_time/60,2))
@@ -116,6 +120,6 @@ if __name__ == '__main__':
 ```
 </div>
 </details>
-***
+* * *
     """
     print(end_msg)
