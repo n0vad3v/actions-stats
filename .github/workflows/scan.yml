@@ -1,0 +1,37 @@
+name: Scan all orgs from orgs.yml
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  scan:
+    name: Scan orgs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup env
+        run: | 
+          pip install -r requirements.txt
+      
+      - name: Scan
+        uses: mathiasvr/command-output@v1
+        id: scan
+        with:
+          run: |
+            cd actions-scan && python3 scan.py ${{ secrets.GITHUB_TOKEN }} > orgs.md
+
+      - name: Update Repo
+        run: |
+          git config --global user.name 'n0vad3v'
+          git config --global user.email 'nova-kwok@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git add actions-scan/orgs.md
+          git commit -m "Update orgs.md"
+          git push
+      
