@@ -97,8 +97,8 @@ if __name__ == '__main__':
             total_ret[repo]['per_workflow'][workflow_name] = {'total_runtime': '{} mins'.format(round(total_workflow_run_time/60,2)),'average_runtime': '{} mins'.format(round(average_workflow_run_time/60,2))}
             repo_total_run_time += total_workflow_run_time
 
-            # Sleep for 120 seconds to avoid GitHub API rate limit
-            time.sleep(120)
+            # Sleep for 10 seconds to avoid GitHub API rate limit
+            time.sleep(10)
         # Sum up all workflows total runtime
         try:
             total_ret[repo]['total_runtime'] = '{} mins'.format(round(repo_total_run_time/60,2))
