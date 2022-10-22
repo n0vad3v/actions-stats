@@ -67,21 +67,21 @@ Error: {'total_count': 0, 'workflow_runs': []}
 +-------------------------------------+----------------+-------------------------------------+--------------------------+------------------------+
 | Repo                                | Total Runtime  | Workflow Name                       | Workflow Average Runtime | Workflow Total Runtime |
 +-------------------------------------+----------------+-------------------------------------+--------------------------+------------------------+
-| datafuselabs/databend               | 132120.63 mins |                                     |                          |                        |
+| datafuselabs/databend               | 131432.83 mins |                                     |                          |                        |
 |                                     |                | Typo CI                             | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Unit Tests                          | 0.0 mins                 | 0.0 mins               |
 |                                     |                | License checker                     | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Audit Security                      | 0.0 mins                 | 0.0 mins               |
-|                                     |                | Release                             | 104.77 mins              | 4504.95 mins           |
+|                                     |                | Release                             | 105.57 mins              | 4539.72 mins           |
 |                                     |                | Fast Unit Tests                     | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Databend Base                       | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Test Stateless Standalone           | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Check                               | 0.0 mins                 | 0.0 mins               |
-|                                     |                | Production                          | 65.39 mins               | 19552.7 mins           |
+|                                     |                | Production                          | 66.08 mins               | 19230.43 mins          |
 |                                     |                | Build Tool                          | 26.05 mins               | 156.28 mins            |
-|                                     |                | Dev Linux                           | 26.94 mins               | 31927.63 mins          |
-|                                     |                | Dev MacOS                           | 63.94 mins               | 75774.63 mins          |
-|                                     |                | Build Sqllogic Test Image           | 4.54 mins                | 204.43 mins            |
+|                                     |                | Dev Linux                           | 26.89 mins               | 31734.45 mins          |
+|                                     |                | Dev MacOS                           | 64.04 mins               | 75566.03 mins          |
+|                                     |                | Build Sqllogic Test Image           | 4.48 mins                | 205.92 mins            |
 |                                     |                | Unit Tests and Coverage             | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Stateless Cluster Tests             | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Stateless(Cluster)                  | 0.0 mins                 | 0.0 mins               |
@@ -98,57 +98,57 @@ Error: {'total_count': 0, 'workflow_runs': []}
 |                                     |                | Add issues into projects            | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Crowdin Action                      | 0.0 mins                 | 0.0 mins               |
 | datafuselabs/datafuse-operator      | 0.0 mins       |                                     |                          |                        |
-| datafuselabs/openraft               | 2464.62 mins   |                                     |                          |                        |
+| datafuselabs/openraft               | 2433.45 mins   |                                     |                          |                        |
 |                                     |                | chaos-test                          | 16.2 mins                | 16.2 mins              |
-|                                     |                | ci                                  | 19.23 mins               | 1730.85 mins           |
-|                                     |                | commit-message-check                | 6.35 mins                | 571.15 mins            |
-|                                     |                | Unit test coverage                  | 10.88 mins               | 119.67 mins            |
-|                                     |                | DevSkim                             | 0.81 mins                | 3.23 mins              |
+|                                     |                | ci                                  | 19.09 mins               | 1717.83 mins           |
+|                                     |                | commit-message-check                | 6.55 mins                | 570.18 mins            |
+|                                     |                | Unit test coverage                  | 11.11 mins               | 111.07 mins            |
+|                                     |                | DevSkim                             | 0.81 mins                | 4.05 mins              |
 |                                     |                | .github/workflows/issue-cmds.yml    | 0.19 mins                | 4.55 mins              |
-|                                     |                | .github/workflows/issue-welcome.yml | 0.25 mins                | 0.25 mins              |
-|                                     |                | .github/workflows/pages.yaml        | 8.98 mins                | 8.98 mins              |
+|                                     |                | .github/workflows/issue-welcome.yml | 0.22 mins                | 0.43 mins              |
+|                                     |                | .github/workflows/pages.yaml        | 0.0 mins                 | 0.0 mins               |
 |                                     |                | No workflow name(why?)              | 0.0 mins                 | 0.0 mins               |
 |                                     |                | Release                             | 9.13 mins                | 9.13 mins              |
-|                                     |                | pages build and deployment          | 0.6 mins                 | 0.6 mins               |
+|                                     |                | pages build and deployment          | 0.0 mins                 | 0.0 mins               |
 | datafuselabs/fusebots               | 0.0 mins       |                                     |                          |                        |
 |                                     |                | docker                              | 0.0 mins                 | 0.0 mins               |
 | datafuselabs/test-infra             | 0.0 mins       |                                     |                          |                        |
 | datafuselabs/datafuse-presentations | 0.0 mins       |                                     |                          |                        |
 |                                     |                | pages build and deployment          | 0.0 mins                 | 0.0 mins               |
 | datafuselabs/datafuse-shop          | 0.0 mins       |                                     |                          |                        |
-| datafuselabs/weekly                 | 8.03 mins      |                                     |                          |                        |
-|                                     |                | Build and deploy on push            | 0.35 mins                | 2.48 mins              |
-|                                     |                | pages build and deployment          | 0.79 mins                | 5.55 mins              |
+| datafuselabs/weekly                 | 7.1 mins       |                                     |                          |                        |
+|                                     |                | Build and deploy on push            | 0.36 mins                | 2.18 mins              |
+|                                     |                | pages build and deployment          | 0.82 mins                | 4.92 mins              |
 | datafuselabs/.github                | 0.0 mins       |                                     |                          |                        |
 | datafuselabs/openkv                 | 0.0 mins       |                                     |                          |                        |
 |                                     |                | .github/workflows/pages.yml         | 0.0 mins                 | 0.0 mins               |
 |                                     |                | pages build and deployment          | 0.0 mins                 | 0.0 mins               |
-| datafuselabs/opendal                | 40074.15 mins  |                                     |                          |                        |
-|                                     |                | CI                                  | 11.58 mins               | 3880.5 mins            |
+| datafuselabs/opendal                | 39701.12 mins  |                                     |                          |                        |
+|                                     |                | CI                                  | 11.61 mins               | 3853.62 mins           |
 |                                     |                | Docs                                | 6.16 mins                | 1694.08 mins           |
-|                                     |                | Service Test Azblob                 | 7.48 mins                | 2505.45 mins           |
-|                                     |                | Service Test Fs                     | 6.98 mins                | 2338.95 mins           |
-|                                     |                | Service Test Ftp                    | 9.33 mins                | 3124.0 mins            |
-|                                     |                | Service Test Gcs                    | 7.77 mins                | 2604.5 mins            |
-|                                     |                | Service Test HDFS                   | 8.56 mins                | 2866.77 mins           |
-|                                     |                | Service Test HTTP                   | 7.45 mins                | 2497.23 mins           |
-|                                     |                | Service Test IPFS                   | 7.81 mins                | 4543.18 mins           |
-|                                     |                | Service Test IPMFS                  | 7.39 mins                | 2475.78 mins           |
-|                                     |                | Service Test Memory                 | 7.07 mins                | 2369.07 mins           |
+|                                     |                | Service Test Azblob                 | 7.48 mins                | 2482.78 mins           |
+|                                     |                | Service Test Fs                     | 6.98 mins                | 2318.82 mins           |
+|                                     |                | Service Test Ftp                    | 9.34 mins                | 3102.35 mins           |
+|                                     |                | Service Test Gcs                    | 7.78 mins                | 2584.3 mins            |
+|                                     |                | Service Test HDFS                   | 8.57 mins                | 2845.75 mins           |
+|                                     |                | Service Test HTTP                   | 7.46 mins                | 2477.02 mins           |
+|                                     |                | Service Test IPFS                   | 7.93 mins                | 4410.52 mins           |
+|                                     |                | Service Test IPMFS                  | 7.39 mins                | 2454.92 mins           |
+|                                     |                | Service Test Memory                 | 7.06 mins                | 2344.18 mins           |
 |                                     |                | Service Test Moka                   | 7.81 mins                | 421.95 mins            |
-|                                     |                | Service Test Obs                    | 8.47 mins                | 2839.07 mins           |
+|                                     |                | Service Test Obs                    | 8.5 mins                 | 2821.77 mins           |
 |                                     |                | Service Test Oss                    | 10.78 mins               | 1465.85 mins           |
 |                                     |                | Service Test Redis                  | 8.61 mins                | 1385.8 mins            |
-|                                     |                | Service Test S3                     | 9.14 mins                | 3061.97 mins           |
+|                                     |                | Service Test S3                     | 9.15 mins                | 3037.42 mins           |
 |                                     |                | Test Vault                          | 0.0 mins                 | 0.0 mins               |
-| datafuselabs/opensrv                | 404.9 mins     |                                     |                          |                        |
-|                                     |                | CI                                  | 13.5 mins                | 404.9 mins             |
-| datafuselabs/databend-perf          | 1223.0 mins    |                                     |                          |                        |
-|                                     |                | Perf                                | 27.16 mins               | 950.5 mins             |
-|                                     |                | pages build and deployment          | 0.61 mins                | 16.4 mins              |
+| datafuselabs/opensrv                | 396.05 mins    |                                     |                          |                        |
+|                                     |                | CI                                  | 13.2 mins                | 396.05 mins            |
+| datafuselabs/databend-perf          | 1427.88 mins   |                                     |                          |                        |
+|                                     |                | Perf                                | 31.37 mins               | 1192.08 mins           |
+|                                     |                | pages build and deployment          | 0.61 mins                | 17.58 mins             |
 |                                     |                | Reload tpch                         | 22.81 mins               | 114.03 mins            |
-|                                     |                | Reload hits                         | 17.18 mins               | 85.88 mins             |
-|                                     |                | Reload ontime                       | 11.24 mins               | 56.18 mins             |
+|                                     |                | Reload hits                         | 15.81 mins               | 63.23 mins             |
+|                                     |                | Reload ontime                       | 10.24 mins               | 40.95 mins             |
 |                                     |                | No workflow name(why?)              | 0.0 mins                 | 0.0 mins               |
 | datafuselabs/helm-charts            | 0.0 mins       |                                     |                          |                        |
 |                                     |                | Release Charts                      | 0.0 mins                 | 0.0 mins               |
@@ -173,10 +173,6 @@ Error: {'total_count': 0, 'workflow_runs': []}
 
 ```
     
-Error: {'message': 'Server Error'}
-Error: {'message': 'Server Error'}
-Error: {'message': 'Server Error'}
-Error: {'message': 'Server Error'}
 Error: {'message': 'Server Error'}
 Error: {'message': 'Server Error'}
 Error: {'message': 'Server Error'}
