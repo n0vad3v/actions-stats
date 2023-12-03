@@ -90,28 +90,28 @@ Error: {'total_count': 0, 'workflow_runs': []}
 +-------------------------------------+---------------+-------------------------------------+--------------------------+------------------------+
 | Repo                                | Total Runtime | Workflow Name                       | Workflow Average Runtime | Workflow Total Runtime |
 +-------------------------------------+---------------+-------------------------------------+--------------------------+------------------------+
-| datafuselabs/databend               | 74060.03 mins |                                     |                          |                        |
-|                                     |               | Release                             | 87.0 mins                | 4350.22 mins           |
-|                                     |               | Cancel PR Workflow                  | 0.04 mins                | 11.57 mins             |
-|                                     |               | Production                          | 100.18 mins              | 23040.38 mins          |
+| datafuselabs/databend               | 64793.7 mins  |                                     |                          |                        |
+|                                     |               | Release                             | 87.76 mins               | 4388.1 mins            |
+|                                     |               | Cancel PR Workflow                  | 0.05 mins                | 11.05 mins             |
+|                                     |               | Production                          | 91.86 mins               | 19658.6 mins           |
 |                                     |               | Debug                               | 0.0 mins                 | 0.0 mins               |
-|                                     |               | Typos Check                         | 0.32 mins                | 504.03 mins            |
-|                                     |               | Dev                                 | 20.7 mins                | 30516.22 mins          |
+|                                     |               | Typos Check                         | 0.31 mins                | 465.25 mins            |
+|                                     |               | Dev                                 | 18.81 mins               | 25809.38 mins          |
 |                                     |               | No workflow name(why?)              | 0.0 mins                 | 0.0 mins               |
-|                                     |               | Cloud                               | 28.55 mins               | 1484.82 mins           |
-|                                     |               | PR Assistant                        | 0.25 mins                | 571.57 mins            |
-|                                     |               | Push on main                        | 2.41 mins                | 638.82 mins            |
-|                                     |               | Bindings Python                     | 10.33 mins               | 12877.65 mins          |
+|                                     |               | Cloud                               | 25.03 mins               | 1226.55 mins           |
+|                                     |               | PR Assistant                        | 0.25 mins                | 537.73 mins            |
+|                                     |               | Scheduled                           | 2.37 mins                | 571.28 mins            |
+|                                     |               | Bindings Python                     | 10.14 mins               | 12060.98 mins          |
 |                                     |               | Build Tool                          | 21.59 mins               | 64.77 mins             |
 | datafuselabs/datafuse-operator      | 0.0 mins      |                                     |                          |                        |
-| datafuselabs/openraft               | 1867.87 mins  |                                     |                          |                        |
+| datafuselabs/openraft               | 1903.83 mins  |                                     |                          |                        |
 |                                     |               | No workflow name(why?)              | 0.0 mins                 | 0.0 mins               |
-|                                     |               | ci                                  | 13.57 mins               | 1641.48 mins           |
-|                                     |               | commit-message-check                | 0.9 mins                 | 104.72 mins            |
-|                                     |               | Unit test coverage                  | 3.18 mins                | 101.65 mins            |
+|                                     |               | ci                                  | 13.48 mins               | 1671.13 mins           |
+|                                     |               | commit-message-check                | 0.87 mins                | 105.52 mins            |
+|                                     |               | Unit test coverage                  | 3.14 mins                | 106.62 mins            |
 |                                     |               | DevSkim                             | 0.74 mins                | 3.72 mins              |
-|                                     |               | GPT refine markdown                 | 0.23 mins                | 8.17 mins              |
-|                                     |               | .github/workflows/issue-cmds.yml    | 0.04 mins                | 1.55 mins              |
+|                                     |               | GPT refine markdown                 | 0.23 mins                | 8.65 mins              |
+|                                     |               | .github/workflows/issue-cmds.yml    | 0.04 mins                | 1.62 mins              |
 |                                     |               | .github/workflows/issue-welcome.yml | 0.4 mins                 | 3.22 mins              |
 |                                     |               | Release                             | 1.12 mins                | 3.37 mins              |
 |                                     |               | pages build and deployment          | 0.0 mins                 | 0.0 mins               |
@@ -124,8 +124,8 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | datafuselabs/.github                | 0.0 mins      |                                     |                          |                        |
 | datafuselabs/openkv                 | 0.0 mins      |                                     |                          |                        |
 |                                     |               | No workflow name(why?)              | 0.0 mins                 | 0.0 mins               |
-| datafuselabs/opensrv                | 142.58 mins   |                                     |                          |                        |
-|                                     |               | CI                                  | 3.75 mins                | 142.58 mins            |
+| datafuselabs/opensrv                | 143.23 mins   |                                     |                          |                        |
+|                                     |               | CI                                  | 3.77 mins                | 143.23 mins            |
 | datafuselabs/databend-perf          | 66.6 mins     |                                     |                          |                        |
 |                                     |               | Perf                                | 3.98 mins                | 39.85 mins             |
 |                                     |               | pages build and deployment          | 0.67 mins                | 2.0 mins               |
@@ -139,8 +139,8 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | datafuselabs/opencache              | 0.0 mins      |                                     |                          |                        |
 |                                     |               | CI                                  | 0.0 mins                 | 0.0 mins               |
 |                                     |               | No workflow name(why?)              | 0.0 mins                 | 0.0 mins               |
-| datafuselabs/databend-go            | 23.98 mins    |                                     |                          |                        |
-|                                     |               | CI                                  | 0.96 mins                | 23.98 mins             |
+| datafuselabs/databend-go            | 20.02 mins    |                                     |                          |                        |
+|                                     |               | CI                                  | 0.95 mins                | 20.02 mins             |
 | datafuselabs/jepsen.meta            | 0.0 mins      |                                     |                          |                        |
 | datafuselabs/databend-py            | 5.53 mins     |                                     |                          |                        |
 |                                     |               | CI                                  | 0.59 mins                | 4.7 mins               |
@@ -148,29 +148,29 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | datafuselabs/databend-sqlalchemy    | 16.08 mins    |                                     |                          |                        |
 |                                     |               | CI                                  | 0.61 mins                | 6.7 mins               |
 | datafuselabs/hackathon2022          | 0.0 mins      |                                     |                          |                        |
-| datafuselabs/databend-jdbc          | 8.07 mins     |                                     |                          |                        |
+| datafuselabs/databend-jdbc          | 11.07 mins    |                                     |                          |                        |
 |                                     |               | Release Workflow                    | 0.0 mins                 | 0.0 mins               |
-|                                     |               | Tests                               | 1.34 mins                | 8.07 mins              |
+|                                     |               | Tests                               | 1.38 mins                | 11.07 mins             |
 | datafuselabs/summer-of-code         | 0.0 mins      |                                     |                          |                        |
 | datafuselabs/jsonb                  | 5.57 mins     |                                     |                          |                        |
 |                                     |               | publish                             | 0.0 mins                 | 0.0 mins               |
 |                                     |               | Rust                                | 0.93 mins                | 5.57 mins              |
 | datafuselabs/opendal-redirect       | 0.0 mins      |                                     |                          |                        |
 |                                     |               | CI                                  | 0.0 mins                 | 0.0 mins               |
-| datafuselabs/bendsql                | 1749.58 mins  |                                     |                          |                        |
-|                                     |               | Bindings Node.js                    | 12.08 mins               | 676.53 mins            |
-|                                     |               | Bindings Python                     | 8.13 mins                | 357.78 mins            |
-|                                     |               | CI                                  | 8.03 mins                | 586.5 mins             |
-|                                     |               | PR Assistant                        | 0.21 mins                | 11.02 mins             |
-|                                     |               | Publish                             | 5.78 mins                | 34.7 mins              |
-|                                     |               | Release                             | 13.84 mins               | 83.05 mins             |
+| datafuselabs/bendsql                | 1421.25 mins  |                                     |                          |                        |
+|                                     |               | Bindings Node.js                    | 11.0 mins                | 561.17 mins            |
+|                                     |               | Bindings Python                     | 7.38 mins                | 273.18 mins            |
+|                                     |               | CI                                  | 7.8 mins                 | 491.5 mins             |
+|                                     |               | PR Assistant                        | 0.2 mins                 | 8.97 mins              |
+|                                     |               | Publish                             | 4.55 mins                | 22.75 mins             |
+|                                     |               | Release                             | 12.74 mins               | 63.68 mins             |
 | datafuselabs/askbend                | 13.68 mins    |                                     |                          |                        |
 |                                     |               | ci                                  | 6.84 mins                | 13.68 mins             |
 |                                     |               | release                             | 0.0 mins                 | 0.0 mins               |
 | datafuselabs/databend_fiddle        | 0.0 mins      |                                     |                          |                        |
 |                                     |               | Pylint                              | 0.0 mins                 | 0.0 mins               |
-| datafuselabs/databend-docs          | 437.93 mins   |                                     |                          |                        |
-|                                     |               | build                               | 5.09 mins                | 437.93 mins            |
+| datafuselabs/databend-docs          | 448.4 mins    |                                     |                          |                        |
+|                                     |               | build                               | 5.1 mins                 | 448.4 mins             |
 | datafuselabs/databend-udf           | 7.42 mins     |                                     |                          |                        |
 |                                     |               | Python                              | 0.93 mins                | 7.42 mins              |
 | datafuselabs/wizard                 | 0.0 mins      |                                     |                          |                        |
@@ -215,11 +215,11 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/sqllogictest               | 0.0 mins      |                                              |                          |                        |
 | pingcap/check                      | 0.0 mins      |                                              |                          |                        |
 | pingcap/tidb-lmdb                  | 0.0 mins      |                                              |                          |                        |
-| pingcap/tidb                       | 6185.7 mins   |                                              |                          |                        |
+| pingcap/tidb                       | 5593.25 mins  |                                              |                          |                        |
 |                                    |               | BR / Compatibility Test                      | 0.0 mins                 | 0.0 mins               |
-|                                    |               | BR & Lightning                               | 3.67 mins                | 4119.87 mins           |
-|                                    |               | Dumpling                                     | 8.86 mins                | 1639.08 mins           |
-|                                    |               | misc                                         | 2.23 mins                | 425.32 mins            |
+|                                    |               | BR & Lightning                               | 3.57 mins                | 3571.48 mins           |
+|                                    |               | Dumpling                                     | 8.81 mins                | 1595.07 mins           |
+|                                    |               | misc                                         | 2.23 mins                | 425.27 mins            |
 |                                    |               | MySQL Tests                                  | 1.22 mins                | 1.22 mins              |
 | pingcap/tidb-bench                 | 0.0 mins      |                                              |                          |                        |
 | pingcap/go-hbase                   | 0.0 mins      |                                              |                          |                        |
@@ -238,30 +238,31 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/logo                       | 0.0 mins      |                                              |                          |                        |
 | pingcap/goyacc                     | 0.0 mins      |                                              |                          |                        |
 | pingcap/goleveldb                  | 0.0 mins      |                                              |                          |                        |
-| pingcap/docs                       | 3728.15 mins  |                                              |                          |                        |
-|                                    |               | Upload media files to Qiniu when they change | 0.57 mins                | 10.3 mins              |
+| pingcap/docs                       | 3630.63 mins  |                                              |                          |                        |
 |                                    |               | Assign to Project                            | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Trigger docs site update                     | 0.22 mins                | 69.28 mins             |
-|                                    |               | external-link-check                          | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Automatic Rebase                             | 0.04 mins                | 62.1 mins              |
-|                                    |               | ci                                           | 2.98 mins                | 2690.23 mins           |
-|                                    |               | Links                                        | 1.55 mins                | 6.18 mins              |
-|                                    |               | bot                                          | 0.69 mins                | 15.12 mins             |
+|                                    |               | bot                                          | 0.68 mins                | 14.37 mins             |
+|                                    |               | ci                                           | 2.94 mins                | 2594.53 mins           |
 |                                    |               | cron                                         | 0.28 mins                | 5.85 mins              |
-|                                    |               | Links (Fail Fast)                            | 0.5 mins                 | 428.03 mins            |
-|                                    |               | Prevent Deletion                             | 0.45 mins                | 419.38 mins            |
+|                                    |               | Trigger docs site update                     | 0.22 mins                | 68.68 mins             |
+|                                    |               | JA Full Translation (Google version)         | 6.48 mins                | 19.45 mins             |
 |                                    |               | Pull Request Labeler                         | 0.0 mins                 | 0.0 mins               |
+|                                    |               | external-link-check                          | 0.0 mins                 | 0.0 mins               |
+|                                    |               | Links (Fail Fast)                            | 0.5 mins                 | 418.52 mins            |
+|                                    |               | Links                                        | 1.55 mins                | 6.18 mins              |
+|                                    |               | Upload media files to Qiniu when they change | 0.57 mins                | 10.3 mins              |
+|                                    |               | Prevent Deletion                             | 0.45 mins                | 409.7 mins             |
+|                                    |               | Automatic Rebase                             | 0.04 mins                | 61.38 mins             |
 |                                    |               | translation                                  | 2.71 mins                | 21.67 mins             |
-| pingcap/docs-cn                    | 3013.3 mins   |                                              |                          |                        |
-|                                    |               | ci                                           | 3.31 mins                | 2311.58 mins           |
-|                                    |               | Trigger docs site update                     | 0.19 mins                | 44.55 mins             |
+| pingcap/docs-cn                    | 2899.1 mins   |                                              |                          |                        |
+|                                    |               | ci                                           | 3.26 mins                | 2213.73 mins           |
+|                                    |               | Trigger docs site update                     | 0.19 mins                | 44.18 mins             |
 |                                    |               | Flush PDF by Version                         | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Flush All PDF                                | 0.27 mins                | 1.07 mins              |
-|                                    |               | Links (Fail Fast)                            | 0.49 mins                | 322.52 mins            |
+|                                    |               | Flush All PDF                                | 0.26 mins                | 1.32 mins              |
+|                                    |               | Links (Fail Fast)                            | 0.49 mins                | 314.53 mins            |
 |                                    |               | Links                                        | 1.69 mins                | 6.75 mins              |
 |                                    |               | Upload media files to Qiniu when they change | 0.53 mins                | 3.17 mins              |
-|                                    |               | Prevent Deletion                             | 0.4 mins                 | 282.13 mins            |
-|                                    |               | Automatic Rebase                             | 0.04 mins                | 41.53 mins             |
+|                                    |               | Prevent Deletion                             | 0.4 mins                 | 274.95 mins            |
+|                                    |               | Automatic Rebase                             | 0.04 mins                | 40.47 mins             |
 | pingcap/tidb-binlog                | 0.0 mins      |                                              |                          |                        |
 | pingcap/sqlgram                    | 0.0 mins      |                                              |                          |                        |
 | pingcap/mydumper                   | 0.0 mins      |                                              |                          |                        |
@@ -275,13 +276,13 @@ Error: {'total_count': 0, 'workflow_runs': []}
 |                                    |               | No workflow name(why?)                       | 0.0 mins                 | 0.0 mins               |
 |                                    |               | Repsitory dispatch workflow from blog-cn     | 0.0 mins                 | 0.0 mins               |
 | pingcap/tikv-client-lib-java       | 0.0 mins      |                                              |                          |                        |
-| pingcap/tispark                    | 76.68 mins    |                                              |                          |                        |
+| pingcap/tispark                    | 57.75 mins    |                                              |                          |                        |
 |                                    |               | TLS test                                     | 0.0 mins                 | 0.0 mins               |
 |                                    |               | alter-primary-key-false-test                 | 0.0 mins                 | 0.0 mins               |
 |                                    |               | No workflow name(why?)                       | 0.0 mins                 | 0.0 mins               |
-|                                    |               | CodeQL                                       | 14.0 mins                | 70.02 mins             |
+|                                    |               | CodeQL                                       | 12.78 mins               | 51.13 mins             |
 |                                    |               | Follower Read test                           | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Close inactive issues                        | 0.22 mins                | 6.67 mins              |
+|                                    |               | Close inactive issues                        | 0.22 mins                | 6.62 mins              |
 |                                    |               | License checker                              | 0.0 mins                 | 0.0 mins               |
 |                                    |               | verify                                       | 0.0 mins                 | 0.0 mins               |
 | pingcap/octopus                    | 0.0 mins      |                                              |                          |                        |
@@ -312,17 +313,17 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/tidb-insight               | 0.0 mins      |                                              |                          |                        |
 |                                    |               | No workflow name(why?)                       | 0.0 mins                 | 0.0 mins               |
 | pingcap/badger                     | 0.0 mins      |                                              |                          |                        |
-| pingcap/tidb-operator              | 4021.13 mins  |                                              |                          |                        |
+| pingcap/tidb-operator              | 3973.68 mins  |                                              |                          |                        |
 |                                    |               | No workflow name(why?)                       | 0.0 mins                 | 0.0 mins               |
 |                                    |               | .github/workflows/cd.yml                     | 0.0 mins                 | 0.0 mins               |
 |                                    |               | chaos                                        | 0.0 mins                 | 0.0 mins               |
-|                                    |               | ci                                           | 18.5 mins                | 4013.57 mins           |
-|                                    |               | Close stale issues/prs                       | 0.25 mins                | 7.57 mins              |
+|                                    |               | ci                                           | 18.53 mins               | 3966.22 mins           |
+|                                    |               | Close stale issues/prs                       | 0.25 mins                | 7.47 mins              |
 | pingcap/vldb-boss-2018             | 0.0 mins      |                                              |                          |                        |
 | pingcap/errors                     | 0.0 mins      |                                              |                          |                        |
 | pingcap/errcode                    | 0.0 mins      |                                              |                          |                        |
-| pingcap/tidb-engine-ext            | 681.72 mins   |                                              |                          |                        |
-|                                    |               | Pull Request CI                              | 52.44 mins               | 681.72 mins            |
+| pingcap/tidb-engine-ext            | 517.03 mins   |                                              |                          |                        |
+|                                    |               | Pull Request CI                              | 57.45 mins               | 517.03 mins            |
 | pingcap/tidb-academy-labs          | 0.0 mins      |                                              |                          |                        |
 | pingcap/parser                     | 0.0 mins      |                                              |                          |                        |
 | pingcap/benchmarksql               | 0.0 mins      |                                              |                          |                        |
@@ -355,23 +356,23 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/tispark-test               | 0.0 mins      |                                              |                          |                        |
 | pingcap/monitoring                 | 0.0 mins      |                                              |                          |                        |
 | pingcap/presentations              | 0.0 mins      |                                              |                          |                        |
-| pingcap/tiflow                     | 60851.67 mins |                                              |                          |                        |
-|                                    |               | Auto Assign to Bugs and Questions            | 0.24 mins                | 103.2 mins             |
+| pingcap/tiflow                     | 60247.03 mins |                                              |                          |                        |
+|                                    |               | Auto Assign to Bugs and Questions            | 0.24 mins                | 102.35 mins            |
 |                                    |               | Check & Build                                | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Dataflow Engine Chaos                        | 18.72 mins               | 3932.15 mins           |
-|                                    |               | DM Binlog 999999                             | 11.24 mins               | 2360.47 mins           |
-|                                    |               | DM Chaos                                     | 12.28 mins               | 2578.07 mins           |
+|                                    |               | Dataflow Engine Chaos                        | 18.53 mins               | 3891.68 mins           |
+|                                    |               | DM Binlog 999999                             | 11.1 mins                | 2330.12 mins           |
+|                                    |               | DM Chaos                                     | 12.13 mins               | 2547.45 mins           |
 |                                    |               | DM Web UI Lint                               | 1.23 mins                | 2.47 mins              |
-|                                    |               | Upstream Database Switch                     | 13.2 mins                | 2771.83 mins           |
+|                                    |               | Upstream Database Switch                     | 13.01 mins               | 2731.57 mins           |
 |                                    |               | Design Docs Lint                             | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Upgrade DM via TiUP                          | 200.61 mins              | 42128.65 mins          |
+|                                    |               | Upgrade DM via TiUP                          | 200.61 mins              | 42128.73 mins          |
 | pingcap/br                         | 0.0 mins      |                                              |                          |                        |
 |                                    |               | build                                        | 0.0 mins                 | 0.0 mins               |
 |                                    |               | compatibility-test                           | 0.0 mins                 | 0.0 mins               |
 | pingcap/go-randgen                 | 0.0 mins      |                                              |                          |                        |
 | pingcap/k8s-fluent-bit-stackdriver | 0.0 mins      |                                              |                          |                        |
-| pingcap/advanced-statefulset       | 488.12 mins   |                                              |                          |                        |
-|                                    |               | ci                                           | 13.53 mins               | 487.22 mins            |
+| pingcap/advanced-statefulset       | 482.98 mins   |                                              |                          |                        |
+|                                    |               | ci                                           | 13.39 mins               | 482.08 mins            |
 |                                    |               | release                                      | 0.3 mins                 | 0.9 mins               |
 | pingcap/style-guide                | 0.0 mins      |                                              |                          |                        |
 | pingcap/go-tpc                     | 0.0 mins      |                                              |                          |                        |
@@ -405,7 +406,6 @@ Error: {'total_count': 0, 'workflow_runs': []}
 ```
     
 Error: {'total_count': 0, 'workflow_runs': []}
-Error: {'message': 'Server Error'}
 Error: {'total_count': 0, 'workflow_runs': []}
 Error: {'total_count': 0, 'workflow_runs': []}
 Error: {'total_count': 0, 'workflow_runs': []}
