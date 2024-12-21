@@ -42,14 +42,14 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | Repo                                | Total Runtime | Workflow Name                        | Workflow Average Runtime | Workflow Total Runtime |
 +-------------------------------------+---------------+--------------------------------------+--------------------------+------------------------+
 | webp-sh/webp_server_node            | 0.0 mins      |                                      |                          |                        |
-| webp-sh/webp_server_go              | 181.43 mins   |                                      |                          |                        |
+| webp-sh/webp_server_go              | 182.25 mins   |                                      |                          |                        |
 |                                     |               | CI check on every PR                 | 5.65 mins                | 56.48 mins             |
 |                                     |               | CI check on every push               | 1.63 mins                | 4.88 mins              |
 |                                     |               | CodeQL                               | 1.52 mins                | 25.83 mins             |
 |                                     |               | Integration Tests                    | 1.93 mins                | 19.35 mins             |
 |                                     |               | Release Binaries                     | 2.03 mins                | 2.03 mins              |
 |                                     |               | Build and release docker images      | 16.15 mins               | 64.58 mins             |
-|                                     |               | go_modules in /. - Update #935268312 | 0.92 mins                | 8.27 mins              |
+|                                     |               | go_modules in /. - Update #935853405 | 0.91 mins                | 9.08 mins              |
 | webp-sh/webp                        | 0.0 mins      |                                      |                          |                        |
 | webp-sh/webp_server_python          | 0.0 mins      |                                      |                          |                        |
 | webp-sh/webp_server_java            | 0.0 mins      |                                      |                          |                        |
@@ -135,13 +135,13 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/sqllogictest               | 0.0 mins      |                                                                |                          |                        |
 | pingcap/check                      | 0.0 mins      |                                                                |                          |                        |
 | pingcap/tidb-lmdb                  | 0.0 mins      |                                                                |                          |                        |
-| pingcap/tidb                       | 2596.67 mins  |                                                                |                          |                        |
-|                                    |               | BR & Lightning                                                 | 2.96 mins                | 1705.73 mins           |
-|                                    |               | Dumpling                                                       | 8.19 mins                | 770.08 mins            |
+| pingcap/tidb                       | 2507.15 mins  |                                                                |                          |                        |
+|                                    |               | BR & Lightning                                                 | 2.83 mins                | 1616.92 mins           |
+|                                    |               | Dumpling                                                       | 8.26 mins                | 768.0 mins             |
 |                                    |               | BR / Compatibility Test                                        | 0.0 mins                 | 0.0 mins               |
 |                                    |               | misc                                                           | 2.08 mins                | 110.28 mins            |
 |                                    |               | MySQL Tests                                                    | 0.0 mins                 | 0.0 mins               |
-|                                    |               | go_modules in /. for golang.org/x/net - Update #935495540      | 1.17 mins                | 10.57 mins             |
+|                                    |               | go_modules in /. - Update #935898240                           | 1.2 mins                 | 11.95 mins             |
 | pingcap/tidb-bench                 | 0.0 mins      |                                                                |                          |                        |
 | pingcap/go-hbase                   | 0.0 mins      |                                                                |                          |                        |
 | pingcap/tso                        | 0.0 mins      |                                                                |                          |                        |
@@ -150,36 +150,36 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/weekly                     | 0.0 mins      |                                                                |                          |                        |
 | pingcap/tipb                       | 29.58 mins    |                                                                |                          |                        |
 |                                    |               | Unit Test                                                      | 2.47 mins                | 29.58 mins             |
-| pingcap/kvproto                    | 392.4 mins    |                                                                |                          |                        |
-|                                    |               | C++ Test                                                       | 10.93 mins               | 262.3 mins             |
-|                                    |               | Golang Test                                                    | 0.93 mins                | 22.22 mins             |
-|                                    |               | Rust Test                                                      | 4.5 mins                 | 107.88 mins            |
+| pingcap/kvproto                    | 364.65 mins   |                                                                |                          |                        |
+|                                    |               | C++ Test                                                       | 11.99 mins               | 251.7 mins             |
+|                                    |               | Golang Test                                                    | 0.93 mins                | 19.48 mins             |
+|                                    |               | Rust Test                                                      | 4.45 mins                | 93.47 mins             |
 | pingcap/etcdv3-gateway             | 0.0 mins      |                                                                |                          |                        |
 | pingcap/mpdriver                   | 0.0 mins      |                                                                |                          |                        |
 | pingcap/logo                       | 0.0 mins      |                                                                |                          |                        |
 | pingcap/goyacc                     | 0.0 mins      |                                                                |                          |                        |
 | pingcap/goleveldb                  | 0.0 mins      |                                                                |                          |                        |
-| pingcap/docs                       | 2714.4 mins   |                                                                |                          |                        |
+| pingcap/docs                       | 2826.88 mins  |                                                                |                          |                        |
 |                                    |               | Upload media files to Qiniu when they change                   | 0.53 mins                | 3.15 mins              |
-|                                    |               | Trigger docs site update                                       | 0.18 mins                | 41.12 mins             |
-|                                    |               | Automatic Rebase                                               | 0.03 mins                | 45.13 mins             |
-|                                    |               | ci                                                             | 2.68 mins                | 2047.17 mins           |
+|                                    |               | Trigger docs site update                                       | 0.18 mins                | 42.88 mins             |
+|                                    |               | Automatic Rebase                                               | 0.03 mins                | 46.22 mins             |
+|                                    |               | ci                                                             | 2.7 mins                 | 2125.88 mins           |
 |                                    |               | Links                                                          | 2.75 mins                | 11.02 mins             |
-|                                    |               | bot                                                            | 0.46 mins                | 10.03 mins             |
-|                                    |               | cron                                                           | 1.56 mins                | 9.38 mins              |
-|                                    |               | Links (Fail Fast)                                              | 0.38 mins                | 290.23 mins            |
-|                                    |               | Prevent Deletion                                               | 0.31 mins                | 238.42 mins            |
+|                                    |               | bot                                                            | 0.45 mins                | 9.95 mins              |
+|                                    |               | cron                                                           | 1.63 mins                | 8.13 mins              |
+|                                    |               | Links (Fail Fast)                                              | 0.38 mins                | 297.57 mins            |
+|                                    |               | Prevent Deletion                                               | 0.31 mins                | 245.25 mins            |
 |                                    |               | translation                                                    | 0.0 mins                 | 0.0 mins               |
-|                                    |               | JA Full Translation (Google version)                           | 9.38 mins                | 18.75 mins             |
-| pingcap/docs-cn                    | 2638.67 mins  |                                                                |                          |                        |
+|                                    |               | JA Full Translation (Google version)                           | 9.21 mins                | 36.83 mins             |
+| pingcap/docs-cn                    | 2709.18 mins  |                                                                |                          |                        |
 |                                    |               | Upload media files to Qiniu when they change                   | 0.37 mins                | 1.12 mins              |
-|                                    |               | Trigger docs site update                                       | 0.18 mins                | 34.15 mins             |
-|                                    |               | Automatic Rebase                                               | 0.03 mins                | 35.53 mins             |
-|                                    |               | ci                                                             | 3.34 mins                | 2129.32 mins           |
+|                                    |               | Trigger docs site update                                       | 0.18 mins                | 35.77 mins             |
+|                                    |               | Automatic Rebase                                               | 0.03 mins                | 36.25 mins             |
+|                                    |               | ci                                                             | 3.34 mins                | 2186.62 mins           |
 |                                    |               | Links                                                          | 2.14 mins                | 8.55 mins              |
 |                                    |               | Flush All PDF                                                  | 0.41 mins                | 2.03 mins              |
-|                                    |               | Links (Fail Fast)                                              | 0.36 mins                | 230.95 mins            |
-|                                    |               | Prevent Deletion                                               | 0.31 mins                | 197.02 mins            |
+|                                    |               | Links (Fail Fast)                                              | 0.36 mins                | 237.65 mins            |
+|                                    |               | Prevent Deletion                                               | 0.31 mins                | 201.2 mins             |
 |                                    |               | Flush PDF by Version                                           | 0.0 mins                 | 0.0 mins               |
 | pingcap/tidb-binlog                | 0.0 mins      |                                                                |                          |                        |
 | pingcap/sqlgram                    | 0.0 mins      |                                                                |                          |                        |
@@ -193,12 +193,12 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/blog-cn                    | 0.0 mins      |                                                                |                          |                        |
 |                                    |               | No workflow name(why?)                                         | 0.0 mins                 | 0.0 mins               |
 | pingcap/tikv-client-lib-java       | 0.0 mins      |                                                                |                          |                        |
-| pingcap/tispark                    | 13.85 mins    |                                                                |                          |                        |
+| pingcap/tispark                    | 13.77 mins    |                                                                |                          |                        |
 |                                    |               | TLS test                                                       | 0.0 mins                 | 0.0 mins               |
 |                                    |               | No workflow name(why?)                                         | 0.0 mins                 | 0.0 mins               |
 |                                    |               | CodeQL                                                         | 1.52 mins                | 7.62 mins              |
 |                                    |               | Follower Read test                                             | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Close inactive issues                                          | 0.21 mins                | 6.23 mins              |
+|                                    |               | Close inactive issues                                          | 0.21 mins                | 6.15 mins              |
 |                                    |               | License checker                                                | 0.0 mins                 | 0.0 mins               |
 |                                    |               | verify                                                         | 0.0 mins                 | 0.0 mins               |
 | pingcap/octopus                    | 0.0 mins      |                                                                |                          |                        |
@@ -230,12 +230,12 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/tidb-insight               | 0.0 mins      |                                                                |                          |                        |
 |                                    |               | No workflow name(why?)                                         | 0.0 mins                 | 0.0 mins               |
 | pingcap/badger                     | 0.0 mins      |                                                                |                          |                        |
-| pingcap/tidb-operator              | 3129.45 mins  |                                                                |                          |                        |
+| pingcap/tidb-operator              | 3714.13 mins  |                                                                |                          |                        |
 |                                    |               | No workflow name(why?)                                         | 0.0 mins                 | 0.0 mins               |
-|                                    |               | ci-v2                                                          | 3.9 mins                 | 66.23 mins             |
-|                                    |               | ci                                                             | 14.18 mins               | 2793.55 mins           |
+|                                    |               | ci-v2                                                          | 3.82 mins                | 118.55 mins            |
+|                                    |               | ci                                                             | 14.65 mins               | 3325.93 mins           |
 |                                    |               | e2e                                                            | 36.21 mins               | 253.5 mins             |
-|                                    |               | Close stale issues/prs                                         | 0.29 mins                | 8.58 mins              |
+|                                    |               | Close stale issues/prs                                         | 0.29 mins                | 8.57 mins              |
 |                                    |               | go_modules in /. for golang.org/x/crypto - Update #935527875   | 0.84 mins                | 7.58 mins              |
 | pingcap/vldb-boss-2018             | 0.0 mins      |                                                                |                          |                        |
 | pingcap/errors                     | 0.0 mins      |                                                                |                          |                        |
@@ -253,8 +253,8 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/log                        | 2.23 mins     |                                                                |                          |                        |
 |                                    |               | Audit License                                                  | 0.61 mins                | 1.22 mins              |
 |                                    |               | Unit Test                                                      | 0.51 mins                | 1.02 mins              |
-| pingcap/tiflash                    | 42.95 mins    |                                                                |                          |                        |
-|                                    |               | submodules in /. - Update #935363410                           | 4.77 mins                | 42.95 mins             |
+| pingcap/tiflash                    | 47.95 mins    |                                                                |                          |                        |
+|                                    |               | submodules in /. - Update #935949948                           | 4.79 mins                | 47.95 mins             |
 | pingcap/poco                       | 0.0 mins      |                                                                |                          |                        |
 | pingcap/capnproto                  | 0.0 mins      |                                                                |                          |                        |
 | pingcap/boost-extra                | 0.0 mins      |                                                                |                          |                        |
@@ -276,17 +276,17 @@ Error: {'total_count': 0, 'workflow_runs': []}
 | pingcap/monitoring                 | 0.73 mins     |                                                                |                          |                        |
 |                                    |               | go_modules in /. for golang.org/x/net - Update #935206545      | 0.37 mins                | 0.73 mins              |
 | pingcap/presentations              | 0.0 mins      |                                                                |                          |                        |
-| pingcap/tiflow                     | 24570.02 mins |                                                                |                          |                        |
-|                                    |               | Auto Assign to Bugs and Questions                              | 0.22 mins                | 57.18 mins             |
-|                                    |               | Check & Build                                                  | 14.64 mins               | 7422.93 mins           |
-|                                    |               | Dataflow Engine Chaos                                          | 17.83 mins               | 3743.32 mins           |
-|                                    |               | DM Binlog 999999                                               | 12.58 mins               | 2741.75 mins           |
-|                                    |               | DM Chaos                                                       | 27.51 mins               | 5777.95 mins           |
-|                                    |               | Mariadb Master Down and Up                                     | 10.09 mins               | 2158.22 mins           |
-|                                    |               | DM Web UI Lint                                                 | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Upstream Database Switch                                       | 12.3 mins                | 2583.43 mins           |
+| pingcap/tiflow                     | 24928.2 mins  |                                                                |                          |                        |
+|                                    |               | Check & Build                                                  | 14.74 mins               | 7753.05 mins           |
 |                                    |               | Design Docs Lint                                               | 0.0 mins                 | 0.0 mins               |
-|                                    |               | Upgrade DM via TiUP                                            | 0.41 mins                | 85.23 mins             |
+|                                    |               | Upgrade DM via TiUP                                            | 0.41 mins                | 85.22 mins             |
+|                                    |               | DM Chaos                                                       | 27.49 mins               | 5773.4 mins            |
+|                                    |               | Auto Assign to Bugs and Questions                              | 0.22 mins                | 65.35 mins             |
+|                                    |               | DM Binlog 999999                                               | 12.69 mins               | 2767.47 mins           |
+|                                    |               | Upstream Database Switch                                       | 12.38 mins               | 2599.05 mins           |
+|                                    |               | DM Web UI Lint                                                 | 0.0 mins                 | 0.0 mins               |
+|                                    |               | Dataflow Engine Chaos                                          | 17.75 mins               | 3728.48 mins           |
+|                                    |               | Mariadb Master Down and Up                                     | 10.08 mins               | 2156.18 mins           |
 | pingcap/br                         | 0.0 mins      |                                                                |                          |                        |
 |                                    |               | No workflow name(why?)                                         | 0.0 mins                 | 0.0 mins               |
 | pingcap/go-randgen                 | 0.0 mins      |                                                                |                          |                        |
